@@ -34,7 +34,7 @@ This app is built with Python and PyQt6. It provides a user-friendly UI for typi
 Install from PyPI:
 
 ```bash
-pip install redis_viewer
+pip install redis-viewer
 ```
 
 Run the application:

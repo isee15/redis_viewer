@@ -10,13 +10,13 @@ except Exception:
 
 setup(
     name="redis_viewer",
-    version="0.1.0",
+    version="0.1.1",
     author="乖猫记账",
     author_email="meizhitu@gmail.com",
     description="A lightweight, cross-platform desktop GUI for Redis",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/isee15/redis-viewer",
+    url="https://github.com/isee15/redis_viewer",
     py_modules=["redis_gui"],
     classifiers=[
         "Programming Language :: Python :: 3",

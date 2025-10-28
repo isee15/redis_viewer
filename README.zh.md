@@ -34,7 +34,7 @@ Redis 可视化客户端工具（参考 ES Viewer 设计）
 从 PyPI 安装：
 
 ```bash
-pip install redis_viewer
+pip install redis-viewer
 ```
 
 运行应用：
