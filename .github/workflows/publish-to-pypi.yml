@@ -1,0 +1,41 @@
+# This workflow will upload a Python Package using Twine when a release is created
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python#publishing-to-package-registries
+
+name: Publish Python Package to PyPI
+
+permissions:
+  id-token: write
+  contents: read
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: pypi
+
+    steps:
+    - uses: actions/checkout@v4
+      # This step checks out a copy of your repository.
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+      # This step sets up a Python environment for the subsequent steps.
+
+    - name: Install build tooling
+      run: |
+        python -m pip install --upgrade pip
+        pip install setuptools wheel twine
+      # This step installs the necessary build and upload tools.
+
+    - name: Build redis_viewer package
+      run: |
+        python setup_redis.py sdist bdist_wheel
+      # This step runs the setup_redis.py script to build the source distribution and wheel.
+
+    - name: Publish package to PyPI
+      uses: pypa/gh-action-pypi-publish@release/v1
