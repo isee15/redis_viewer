@@ -6,7 +6,7 @@ Redis 可视化客户端工具（参考 ES Viewer 设计）
 该应用使用 Python + PyQt6 构建，提供常用的 Redis 操作：扫描 Key、查看/编辑值、执行命令、查看服务信息。依赖少，便携易用。
 
 ---
-
+<img width="1942" height="1136" alt="image" src="https://github.com/user-attachments/assets/6826b523-7294-4ed5-a030-eab1ff1dd906" />
 ## ✨ 功能
 
 - 连接灵活
