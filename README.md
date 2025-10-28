@@ -6,6 +6,8 @@ A simple, lightweight, cross-platform desktop GUI for browsing and managing Redi
 This app is built with Python and PyQt6. It provides a user-friendly UI for typical Redis operations: scanning keys, viewing/editing values, running commands, and inspecting server info. It is minimal and portable, with few dependencies.
 
 ---
+<img width="1942" height="1136" alt="image" src="https://github.com/user-attachments/assets/6826b523-7294-4ed5-a030-eab1ff1dd906" />
+
 
 ## ✨ Features
 
